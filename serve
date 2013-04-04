@@ -1,2 +1,2 @@
 #!/bin/sh
-bundle exec unicorn -c conf.rb server.ru
+bundle exec unicorn -c conf.rb server.ru -p $PORT
