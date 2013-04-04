@@ -8,11 +8,11 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    unicorn-instruments (0.0.3)
+    unicorn-instruments (0.0.4)
       unicorn (= 4.6.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  unicorn-instruments (= 0.0.3)
+  unicorn-instruments (= 0.0.4)
