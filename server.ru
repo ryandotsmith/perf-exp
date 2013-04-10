@@ -9,6 +9,8 @@ end
 run Proc.new {|env|
   start = Time.now
   sleep(rand(1000) / 1000.0)
+  req = Rack::Request.new(env)
+  req.body.read
   elapsed = (Time.now - start) * 1000
   reqid=env['HTTP_HEROKU_REQUEST_ID']
   $stdout.puts("request-id=#{reqid} measure.rack-request=#{elapsed.round}ms")
